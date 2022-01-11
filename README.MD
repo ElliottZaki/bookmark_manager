@@ -62,3 +62,11 @@ website  | favourite
 bookmarks| list 
 
 bookmark ---> .list ---> websites.
+
+
+# Refractoring to MVC:
+| Component   | Responsibility                              | Refactor                        |
+|------------ |---------------------------------------------|---------------------------------|
+| Model       | Encapsulate logic with relevant data        |                                 |
+| View        | Display the result to a user                | Show the bookmark data in a list|
+| Controller  | Get data from the model and put in the view | Render bookmark data into to the view
