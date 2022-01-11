@@ -70,3 +70,14 @@ bookmark ---> .list ---> websites.
 | Model       | Encapsulate logic with relevant data        |                                 |
 | View        | Display the result to a user                | Show the bookmark data in a list|
 | Controller  | Get data from the model and put in the view | Render bookmark data into to the view
+
+# Instructions to connect online:
+- cd /Users/elliottzaki/Desktop/Projects/bookmark_manager
+- type rackup on the command line.
+- Connect to localhost(9292)
+
+# Database creation instructions: 
+- Connect to psql
+- Create the database using the psql command CREATE DATABASE bookmark_manager;
+- Connect to the database using the pqsl command \c bookmark_manager;
+- Run the query we have saved in the file 01_create_bookmarks_table.sql
