@@ -81,3 +81,20 @@ bookmark ---> .list ---> websites.
 - Create the database using the psql command CREATE DATABASE bookmarks;
 - Connect to the database using the pqsl command \c bookmarks;
 - Run the query saved in the file 01_create_bookmarks_table.sql
+
+
+# User story 2:
+As a frequent user of the Internet
+So I can store one of my favourite websites to visit later
+I want to add new bookmarks to my Bookmark Manager
+
+____________________
+noun     |   verb
+---------|----------
+User     | add
+website  |  
+         |  
+
+bookmark_manager ---> .add ---> bookmark. -->
+
+
