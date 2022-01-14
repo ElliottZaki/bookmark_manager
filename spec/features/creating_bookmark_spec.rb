@@ -4,9 +4,10 @@ feature 'creating a new bookmarks' do
         #arrange
         visit('/bookmarks')
         fill_in('url', with: 'https://www.bbc.co.uk/')
+        fill_in('title', with: 'BBC')
         click_on 'Submit'
         #assert
-        expect(page).to have_content('https://www.bbc.co.uk/')
+        expect(page).to have_link('BBC' ,href: 'https://www.bbc.co.uk/')
     end
 end
 
