@@ -7,6 +7,8 @@ class BookmarkManager < Sinatra::Base
     register Sinatra::Reloader
   end
 
+  enable :sessions, :method_override
+
   get '/' do
     'Welcome to your Bookmark Manager, try typing /bookmarks in the URL'
   end
@@ -21,7 +23,10 @@ class BookmarkManager < Sinatra::Base
     redirect '/bookmarks'
   end
   
-  
+  delete '/bookmarks/:id' do
 
+    p params
+  end
+  
   run! if app_file == $0
 end
