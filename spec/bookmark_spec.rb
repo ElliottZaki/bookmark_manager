@@ -34,36 +34,6 @@ describe Bookmark do
       expect(bookmark.url).to eq 'http://www.example.org'
     end
   end
-
-    # describe '.all' do
-    #     it 'Returns all bookmarks using the .all method.' do
-    #         connection = PG.connect(dbname: 'bookmark_manager_test')
-            
-    #         bookmark = Bookmark.create(url: 'https://stackoverflow.com/', title: 'Stackoverflow')
-    #         Bookmark.create(url: 'http://www.makersacademy.com/', title: 'Makers')
-    #         Bookmark.create(url: 'http://www.destroyallsoftware.com/', title: 'Destoryallsoftware')
-
-    #         bookmarks = Bookmark.all
-
-    #         expect(bookmarks.length).to eq 3
-    #         expect(bookmarks.first).to be_a Bookmark
-    #         expect(bookmarks.first.id).to eq bookmark.id
-    #         expect(bookmarks.first.title).to eq 'Stackoverflow'
-    #         expect(bookmarks.first.url).to eq 'https://stackoverflow.com/'
-    #     end
-    # end
-
-    # describe '.create' do
-    #     it 'creates a new saved bookmark' do
-    #         bookmark = Bookmark.create(url: 'https://stackoverflow.com/', title: 'Stackoverflow')
-    #         persisted_data = persisted_data(id: bookmark.id)
-
-    #         expect(bookmark).to be_a Bookmark
-    #         expect(bookmark.id).to eq persisted_data.first['id']
-    #         expect(bookmark.title).to eq 'Stackoverflow'
-    #         expect(bookmark.url).to eq 'https://stackoverflow.com/'
-    #     end
-    # end
 end
 
 
